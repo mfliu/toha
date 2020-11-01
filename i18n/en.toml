@@ -5,9 +5,6 @@ other = "Home"
 [posts]
 other = "Posts"
 
-[toc_heading]
-other = "Table of Contents"
-
 [at]
 other = "at"
 
@@ -19,12 +16,6 @@ other = "Navigation"
 
 [contact_me]
 other = "Contact me:"
-
-[email]
-other = "Email"
-
-[phone]
-other = "Phone"
 
 [newsletter_text]
 other = "Stay up to date with email notification"
@@ -40,12 +31,3 @@ other = "Submit"
 
 [hugoAttributionText]
 other = "Powered by"
-
-[prev]
-other = "Prev"
-
-[next]
-other = "Next"
-
-[improve_this_page]
-other = "Improve this page"

@@ -5,9 +5,6 @@ other = "Beranda"
 [posts]
 other = "Artikel"
 
-[toc_heading]
-other = "Daftar Isi"
-
 [at]
 other = "at"
 
@@ -19,12 +16,6 @@ other = "Navigasi"
 
 [contact_me]
 other = "Hubungi saya:"
-
-[email]
-other = "Surel"
-
-[phone]
-other = "Telepon"
 
 [newsletter_text]
 other = "Ingin selalu update dengan notifikasi email"
@@ -40,12 +31,3 @@ other = "Kirim"
 
 [hugoAttributionText]
 other = "Didukung oleh"
-
-[prev]
-other = "Sebelumnya"
-
-[next]
-other = "Lanjut"
-
-[improve_this_page]
-other = "Perbaiki halaman ini"

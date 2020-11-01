@@ -43,11 +43,31 @@
       >
       {{ end }}
     </div>
-    <!-- soft skills circular-progressbar -->
+    <!-- education -->
     <div class="col-sm-6 pt-5 pl-md-4 pl-sm-3 pt-sm-0">
-      <div class="row">
-        {{ range .softSkills }}
-          {{ partial "misc/soft-skills.html" . }}
+    <h4 class="p-1">Education</h4>
+    <div style="padding: 0.25rem;"><!--> style="display: flex; justify-content: space-between;"><!-->
+        {{ range .education }}
+        <div style="display: grid; grid-template-columns: auto 20%; grid-template-rows: 15% 25% 15%
+        15%">
+              <h6 style="grid-column-start: 1; grid-column-end: 1; grid-row-start: 1; grid-row-end:
+              2">{{ .name }}</h6>
+              <h6 style="grid-column-start: 1; grid-column-end: 1; grid-row-start: 2; grid-row-end:
+              3">{{ .timeline }}</h6>
+                {{ if .degree2 }}
+              <h6 class="text-muted" style="grid-column-start: 1; grid-column-end: 1;
+              grid-row-start: 3; grid-row-end: 4;">{{ .degree | markdownify  }}</h6>
+              <h6 class="text-muted" style="grid-column-start: 1; grid-column-end: 1;
+              grid-row-start: 4; grid-row-end: 4;">
+                  {{ .degree2 | markdownify }}
+              </h6>
+              {{ else }}
+              <h6 class="text-muted" style="grid-column-start: 1; grid-column-end: 1;
+              grid-row-start: 3; grid-row-end: 4;">{{ .degree | markdownify  }}</h6>
+                {{ end }}
+          <img width="100%" style="grid-column-start: 2; grid-column-end: 2; grid-row-start: 1;
+          grid-row-end: 1;"src={{ .image | relURL}}/>
+        </div>
         {{ end }}
       </div>
     </div>

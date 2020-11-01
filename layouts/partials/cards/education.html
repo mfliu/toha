@@ -1,0 +1,14 @@
+<div class="post-card">
+  <div class="card">
+     <div class="card-head">
+       {{ if .icon }}
+        <img class="card-img-top" src="{{ .icon | relURL }}" alt="{{ .name }}" />
+       {{ end }}
+       <h5 class="card-title mb-0">{{ .name }}</h5> 
+    </div>
+    <div class="card-body">
+      <p class="text-muted", style="font-size:11px">{{ .degree }}</p>
+      <p class="text-muted", style="font-size:11px">{{ .timeline}}</p>
+    </div>
+  </div>
+</div>
